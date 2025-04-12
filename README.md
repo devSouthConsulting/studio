@@ -1,31 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3333](http://localhost:3333) with your browser to see the result.
-
 # SANFORDEV Studio
 
 This is a Sanity Studio project for the SANFORDEV blog built with Next.js 14 and deployed on Netlify.
+
+## Setup
+
+Clone the repository:
+
+```bash
+git clone git@github.com:sanfordev/studio.git
+cd studio
+```
 
 ## Development
 
 First, set up your environment variables:
 
 ```bash
-cp .env.local.example .env.local
+cp env-example.md .env.local
 ```
 
 Then install dependencies and run the development server:
