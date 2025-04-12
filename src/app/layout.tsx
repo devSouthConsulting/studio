@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "SANFORDEV Studio",
-  description: "Static Content with Sanity",
-};
+export { metadata } from "./metadata";
 
 export default function RootLayout({
   children,
