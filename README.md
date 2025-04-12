@@ -14,23 +14,44 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3333](http://localhost:3333) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# SANFORDEV Studio
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This is a Sanity Studio project for the SANFORDEV blog built with Next.js 14 and deployed on Netlify.
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+First, set up your environment variables:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+cp .env.local.example .env.local
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then install dependencies and run the development server:
 
-## Deploy on Vercel
+```bash
+npm install
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3333](http://localhost:3333) to access the Sanity Studio.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables Required
+
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`: Your Sanity project ID
+- `NEXT_PUBLIC_SANITY_DATASET`: Your Sanity dataset (usually "production")
+- `NEXT_PUBLIC_SANITY_API_TOKEN`: Public token for client-side queries
+- `SANITY_STUDIO_API_TOKEN`: Private token for Studio authentication
+
+## Deployment
+
+This project is configured for Netlify deployment. The `netlify.toml` file contains all necessary configuration.
+
+To deploy:
+
+1. Connect your repository to Netlify
+2. Set up the required environment variables in Netlify's dashboard
+3. Deploy using the main branch
+
+The studio will be available at: `https://your-site.netlify.app/studio`
