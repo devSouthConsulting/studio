@@ -8,9 +8,9 @@
  */
 
 import { NextStudio } from "next-sanity/studio";
-import config from "@/../sanity.config";
+import { metadata as siteMetadata } from "@/app/metadata";
 import { metadata as studioMetadata } from "next-sanity/studio";
-import { metadata as siteMetadata } from "../../../metadata";
+import config from "@/../sanity.config";
 
 export const dynamic = "force-static";
 
