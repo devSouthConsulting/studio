@@ -7,10 +7,12 @@
     "npm": "^10.9.2"
   },
   "scripts": {
-    "dev": "next dev -p 3333",
+    "dev:next": "next dev -p 3333",
     "build": "next build",
     "start": "next start -p 4444",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev": "sanity dev --port=1942",
+    "deploy": "sanity deploy"
   },
   "dependencies": {
     "@sanity/icons": "^3.7.0",
